@@ -4,7 +4,7 @@ import java.util.List;
 
 public class User {
     @SerializedName("display_name")
-    private String displayName;
+    private String userName;
     private String location;
     @SerializedName("answer_count")
     private int answerCount;
@@ -12,12 +12,12 @@ public class User {
     private int questionCount;
     private List<String> tags;
     @SerializedName("link")
-    private String link;
+    private String profileLink;
     @SerializedName("profile_image")
-    private String profileImage;
+    private String avatarLink;
 
-    public String getDisplayName() {
-        return displayName;
+    public String getUserName() {
+        return userName;
     }
 
     public String getLocation() {
@@ -36,24 +36,24 @@ public class User {
         return tags;
     }
 
-    public String getLink() {
-        return link;
+    public String getProfileLink() {
+        return profileLink;
     }
 
-    public String getProfileImage() {
-        return profileImage;
+    public String getAvatarLink() {
+        return avatarLink;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "displayName='" + displayName + '\'' +
+                "userName='" + userName + '\'' +
                 ", location='" + location + '\'' +
                 ", answerCount=" + answerCount +
                 ", questionCount=" + questionCount +
                 ", tags=" + tags +
-                ", link='" + link + '\'' +
-                ", profileImage='" + profileImage + '\'' +
+                ", profileLink='" + profileLink + '\'' +
+                ", avatarLink='" + avatarLink + '\'' +
                 '}';
     }
 }
